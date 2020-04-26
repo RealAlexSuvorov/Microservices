@@ -1,2 +1,2 @@
 # Microservices
-Microservices with RabbitMQ
+Microservices with RabbitMQ using .NET Core
