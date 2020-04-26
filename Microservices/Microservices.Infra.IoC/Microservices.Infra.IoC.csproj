@@ -8,4 +8,9 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Microservices.Domain.Core\Microservices.Domain.Core.csproj" />
+    <ProjectReference Include="..\Microservices.Infra.Bus\Microservices.Infra.Bus.csproj" />
+  </ItemGroup>
+
 </Project>
