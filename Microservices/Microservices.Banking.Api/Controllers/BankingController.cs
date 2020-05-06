@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microservices.Banking.Application.Interfaces;
+using Microservices.Banking.Application.Models;
 using Microservices.Banking.Domain.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -24,6 +25,13 @@ namespace Microservices.Banking.Api.Controllers
         public ActionResult<IEnumerable<Account>> Get()
         {
             return Ok(accountService.GetAccounts());
+        }
+
+        [HttpPost]
+        public IActionResult Post([FromBody] AccountTransfer accountTransfer)
+        {
+            accountService.Transfer(accountTransfer);
+            return Ok(accountTransfer);
         }
     }
 }
