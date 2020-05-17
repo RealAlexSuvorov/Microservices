@@ -14,6 +14,8 @@
     <ProjectReference Include="..\Microservices.Banking.Domain\Microservices.Banking.Domain.csproj" />
     <ProjectReference Include="..\Microservices.Domain.Core\Microservices.Domain.Core.csproj" />
     <ProjectReference Include="..\Microservices.Infra.Bus\Microservices.Infra.Bus.csproj" />
+    <ProjectReference Include="..\Microservices.Transfer.Application\Microservices.Transfer.Application.csproj" />
+    <ProjectReference Include="..\Microservices.Transfer.Data\Microservices.Transfer.Data.csproj" />
   </ItemGroup>
 
 </Project>
